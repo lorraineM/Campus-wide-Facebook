@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib version="2.0"
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    	http://java.sun.com/xml/ns/j2ee 
+    	http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+
+    <display-name>Zaizheli Custom Functions</display-name>    
+    <tlib-version>1.0</tlib-version>
+    <short-name>f</short-name>
+    <uri>http://zaizheli.net/functions</uri>
+
+    <function>
+        <name>imageUrl</name>
+        <function-class>net.zaizheli.web.utils.WebImageUtil</function-class>
+        <function-signature>java.lang.String getImageUrl(java.lang.String)</function-signature>
+    </function>
+    <function>
+        <name>gender</name>
+        <function-class>net.zaizheli.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getGender(net.zaizheli.constants.Gender)</function-signature>
+    </function>
+    <function>
+        <name>thirdPerson</name>
+        <function-class>net.zaizheli.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getThirdPerson(net.zaizheli.constants.Gender)</function-signature>
+    </function>
+    <function>
+        <name>avatarUrl</name>
+        <function-class>net.zaizheli.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getAvatarUrl(net.zaizheli.domains.Resource, net.zaizheli.constants.Gender)</function-signature>
+    </function>
+    <function>
+        <name>action</name>
+        <function-class>net.zaizheli.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getActionHtml(net.zaizheli.vo.ActionVo)</function-signature>
+    </function>
+</taglib>
